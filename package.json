@@ -1,0 +1,16 @@
+{
+  "name": "Presentation",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "gulp server",
+    "postinstall": "bower install"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-serve": "^1.2.0"
+  }
+}

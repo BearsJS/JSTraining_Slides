@@ -1,0 +1,77 @@
+.circular {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+.reveal section img {
+    background: none;
+    box-shadow: none;
+    border: none;
+}
+
+.starburst {
+    background: darkred;
+    width: 1.7em;
+    height: 1.7em;
+    text-align: center;
+    color: black;
+}
+
+.starburst,
+.starburst span {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+}
+
+.starburst span {
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    transform: rotate(45deg);
+    font-size: 0.8em;
+}
+
+.starburst:before,
+.starburst:after,
+.starburst span:before,
+.starburst span:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
+    transform: rotate(30deg);
+}
+
+.starburst:after {
+    transform: rotate(-30deg);
+}
+
+.starburst span:after {
+    transform: rotate(30deg);
+}
+
+.starburst span:before {
+    transform: rotate(-30deg);
+}
+
+.es6-starburst {
+    position: fixed;
+    top: -100px;
+    right: 50px;
+    margin-top: -1.25em;
+    margin-left: -1.25em;
+    transform: rotate(-45deg);
+}
+

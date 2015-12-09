@@ -1,0 +1,10 @@
+# Dependency directory
+node_modules
+vendor
+
+# WebStorm
+.idea
+
+dist
+.tmp
+.DS_Store

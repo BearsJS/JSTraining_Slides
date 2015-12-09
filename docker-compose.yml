@@ -1,0 +1,8 @@
+web:
+  build: .
+  dockerfile: Dockerfile_dev
+  command: gulp
+  volumes:
+   - ./app/:/home/workspace/app
+  ports:
+   - "3000:3000"

@@ -1,0 +1,10 @@
+{
+    "directory": "vendor",
+    "timeout": 120000,
+    "registry": {
+        "search": [
+            "http://bower.herokuapp.com",
+            "https://bower.herokuapp.com"
+        ]
+    }
+}
