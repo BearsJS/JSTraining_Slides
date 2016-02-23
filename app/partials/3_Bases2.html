@@ -12,10 +12,38 @@
       </aside>
    </section>
    <section>
-      <h3>var / let / const</h3>
+      <h3>Variables: var</h3>
 
-      <p>
-      </p>
+      <p>Portée: la fonction courante</p><br>
+      <p>Utilisation : </p>
+      <pre><code class="js">var maVar [= maValeur];</code></pre>
+
+      <aside class="notes">
+         <ul>
+            <li></li>
+         </ul>
+      </aside>
+   </section>
+   <section>
+      <h3>Variables: let</h3>
+
+      <p>Portée: le bloc courant ( {...} )</p><br>
+      <p>Utilisation : </p>
+      <pre><code class="js">let maVar [= maValeur];</code></pre>
+
+      <aside class="notes">
+         <ul>
+            <li></li>
+         </ul>
+      </aside>
+   </section>
+   <section>
+      <h3>Variables: const</h3>
+
+      <p>Permet de créer une constante qui ne peut plus être réaffectée. La valeur n'est pas immuable</p>
+      <p>Portée: la fonction courante</p><br>
+      <p>Utilisation : </p>
+      <pre><code class="js">const maVar [= maValeur];</code></pre>
 
       <aside class="notes">
          <ul>
@@ -27,6 +55,8 @@
       <h3>Hoisting</h3>
 
       <p>
+         Toute déclaration de variable ou fonction déclarée, est remontée en haut de sa portée. <br><br>
+         L'affectation se fait là où la variable est définie.
       </p>
 
       <aside class="notes">
@@ -38,8 +68,17 @@
    <section>
       <h3>if / else </h3>
 
-      <p>
-      </p>
+      <p>Permet d'exécutee une instruction si une condition donnée est vraie. En cas contraire ça passe dans le else</p>
+
+<pre><code class="js">if (condition) {
+  instruction1
+} [else if (autre condition){
+  instruction2
+}] [else {
+  instruction2
+}]</code></pre>
+
+      <p><i>condition</i> est une expression qui est évaluée à <strong>true</strong> ou <strong>false</strong>.</p>
 
       <aside class="notes">
          <ul>
@@ -48,10 +87,72 @@
       </aside>
    </section>
    <section>
-      <h3>for / while</h3>
+      <h3>for</h3>
+
+      <p>Permet de créer une boucle.</p>
+
+      <pre><code class="js">for ([initialisation]; [condition]; [expression_finale]) {
+  instruction
+}</code></pre>
 
       <p>
+         Exemple: on itère 10 fois (de 0 à 9)
       </p>
+
+      <pre><code class="js">var i;
+for (i = 0; i <= 9; i++) {
+  console.log(i);
+}</code></pre>
+
+      <aside class="notes">
+         <ul>
+            <li></li>
+         </ul>
+      </aside>
+   </section>
+   <section>
+      <h3>while</h3>
+
+      <p>Permet de créer une boucle s'éxécutant tant qu'une condition est vrai.</p>
+
+      <pre><code class="js">while (condition) {
+  instruction
+}</code></pre>
+
+      <p>
+         Exemple: on itère tant que n est inférieur à 3
+      </p>
+
+      <pre><code class="js">var i = 0;
+while (i < 3) {
+  console.log(i);
+  i++;
+}</code></pre>
+
+      <aside class="notes">
+         <ul>
+            <li></li>
+         </ul>
+      </aside>
+   </section>
+   <section>
+      <h3>do ... while</h3>
+
+      <p>Permet de créer une boucle s'éxécutant tant qu'une condition est vrai et s'éxécutant au moins une fois.</p>
+
+      <pre><code class="js">do {
+  instruction
+} while (condition)</code></pre>
+
+      <p>
+         Exemple: on itère tant que n est inférieur à 3
+      </p>
+
+      <pre><code class="js">var i = 0;
+do {
+  console.log(i);
+  i++;
+} while (i < 3)</code></pre>
 
       <aside class="notes">
          <ul>
@@ -63,7 +164,23 @@
       <h3>try / catch</h3>
 
       <p>
+         Permet de regrouper un ensemble d'instructions dans le try
+         et de gérer les erreurs si une instruction provoque une exception.
       </p>
+
+      <pre><code class="js">try {
+  instructions_try
+}
+[catch (exception_var_1) {
+  instructions_catch_1
+}]
+...
+[catch (exception_var_2) {
+  instructions_catch_2
+}]
+[finally {
+  instructions_finally
+}]</code></pre>
 
       <aside class="notes">
          <ul>
@@ -75,8 +192,12 @@
       <h3>Les fonctions</h3>
 
       <p>
-         Présentation
+         Déclarées
       </p>
+
+      <pre><code class="js">function nom([param1,[, param2,[..., paramN]]]) {
+  [instructions]
+}</code></pre>
 
       <aside class="notes">
          <ul>
@@ -88,8 +209,12 @@
       <h3>Les fonctions</h3>
 
       <p>
-         Déclaration
+         Expressions
       </p>
+
+      <pre><code class="js">var nom = function ([param1,[, param2,[..., paramN]]]) {
+  [instructions]
+};</code></pre>
 
       <aside class="notes">
          <ul>
@@ -104,17 +229,9 @@
          Utilisation des arguments
       </p>
 
-      <aside class="notes">
-         <ul>
-            <li></li>
-         </ul>
-      </aside>
-   </section>
-   <section>
-      <h3>Fonctionnelle</h3>
-
-      <p>
-      </p>
+      <pre><code class="js">function increment (n) {
+ return ++n;
+}</code></pre>
 
       <aside class="notes">
          <ul>
