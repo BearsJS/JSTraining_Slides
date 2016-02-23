@@ -75,3 +75,10 @@
     transform: rotate(-45deg);
 }
 
+.slide {
+   background-image: url('../img/background.png');
+   background-size: contain;
+   background-position: center;
+   background-color: #2C3E50;
+   background-repeat: no-repeat;
+}
