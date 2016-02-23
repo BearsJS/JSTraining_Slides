@@ -14,8 +14,11 @@
    <section>
       <h3>Les types</h3>
 
-      <p>
-      </p>
+      <ul class="fragments">
+         <li class="fragment">Langage faiblement typé, par opposition aux langages fortement typés tels que C++.</li>
+         <li class="fragment">Cela signifie que les variables JavaScript n'ont pas de type prédéterminé.</li>
+         <li class="fragment">Le type d'une variable est le type de sa valeur.</li>
+      </ul>
 
       <aside class="notes">
          <ul>
@@ -26,8 +29,86 @@
    <section>
       <h3>Typeof</h3>
 
-      <p>
-      </p>
+      <pre style="text-align: center"><code class="js" data-trim>
+         typeof maVariable; // 'type'
+      </code></pre>
+
+      <aside class="notes">
+         <ul>
+            <li></li>
+         </ul>
+      </aside>
+   </section>
+   <section>
+      <h3>Typeof</h3>
+
+      <table class="standard-table">
+         <thead>
+         <tr>
+            <th scope="col">Type</th>
+            <th scope="col">Résultat</th>
+         </tr>
+         </thead>
+         <tbody>
+         <tr>
+            <td>indéfini</td>
+            <td style="width: 400px">
+               <pre><code class="js">typeof Indefini; //'undefined'</code></pre></td>
+         </tr>
+         <tr>
+            <td>booléen</td>
+            <td style="width: 400px">
+               <pre><code class="js">typeof Booleen; //'boolean'</code></pre></td>
+         </tr>
+         <tr>
+            <td>nombre</td>
+            <td style="width: 400px">
+               <pre><code class="js">typeof Nombre; //'number'</code></pre></td>
+         </tr>
+         <tr>
+            <td>chaîne de caractère</td>
+            <td style="width: 400px">
+               <pre><code class="js">typeof String; //'string'</code></pre></td>
+         </tr>
+         <tr>
+            <td>Objet Function</td>
+            <td style="width: 400px">
+               <pre><code class="js">typeof Function; //'function'</code></pre></td>
+         </tr>
+         <tr>
+            <td>Tout autre objet</td>
+            <td style="width: 400px">
+               <pre><code class="js">typeof Autre; //'object'</code></pre></td>
+         </tr>
+         </tbody>
+      </table>
+
+      <aside class="notes">
+         <ul>
+            <li></li>
+         </ul>
+      </aside>
+   </section>
+   <section>
+      <h3>Typeof</h3>
+      <div class="starburst es6-starburst"><span>ES6</span></div>
+
+      <table class="standard-table">
+         <thead>
+         <tr>
+            <th scope="col">Type</th>
+            <th scope="col">Résultat</th>
+         </tr>
+         </thead>
+         <tbody>
+         <tbody>
+         <tr>
+            <td>Symbol</td>
+            <td style="width: 400px">
+               <pre><code class="js">typeof Symbol; //'symbol'</code></pre></td>
+         </tr>
+         </tbody>
+      </table>
 
       <aside class="notes">
          <ul>
@@ -38,8 +119,65 @@
    <section>
       <h3>Typeof vs Primitif</h3>
 
-      <p>
-      </p>
+      <table class="standard-table">
+         <thead>
+         <tr>
+            <th scope="col">Type</th>
+            <th scope="col">Valeurs</th>
+         </tr>
+         </thead>
+         <tbody>
+         <tr>
+            <td>Booléen</td>
+            <td>true / false</td>
+         </tr>
+         <tr>
+            <td>Nul</td>
+            <td>null</td>
+         </tr>
+         <tr>
+            <td>Undefined</td>
+            <td>undefined</td>
+         </tr>
+         <tr>
+            <td>Nombre</td>
+            <td>+/-Infinity, NaN, les nombres compris entre -(253 -1) et 253 -1</td>
+         </tr>
+         <tr>
+            <td>Chaînes de caractères (strings)</td>
+            <td>Ensemble d'« éléments » de valeurs entières non-signées représentées sur 16 bits. Les string sont immuables</td>
+         </tr>
+         <tr>
+            <td>Object</td>
+            <td>Collections de propriétés</td>
+         </tr>
+         </tbody>
+      </table>
+
+      <aside class="notes">
+         <ul>
+            <li></li>
+         </ul>
+      </aside>
+   </section>
+   <section>
+      <h3>Typeof vs Primitif</h3>
+      <div class="starburst es6-starburst"><span>ES6</span></div>
+
+      <table class="standard-table">
+         <thead>
+         <tr>
+            <th scope="col">Type</th>
+            <th scope="col">Valeurs</th>
+         </tr>
+         </thead>
+         <tbody>
+         <tr>
+            <td>Symbol (ECMAScript 6)</td>
+            <td>Un symbole est une valeur primitive unique et immuable pouvant être utilisée comme clé pour propriété d'un objet</td>
+         </tr>
+         </tbody>
+      </table>
 
       <aside class="notes">
          <ul>
