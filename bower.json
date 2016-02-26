@@ -2,8 +2,8 @@
   "name": "Presentation",
   "version": "0.0.1",
   "dependencies": {
-    "reveal.js": "~3.1.0",
-    "webcomponentsjs": "~0.7.19"
+    "reveal.js": "~3.2.0",
+    "webcomponentsjs": "~0.7.21"
   },
   "devDependencies": {}
 }
