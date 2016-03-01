@@ -27,6 +27,50 @@
       </aside>
    </section>
    <section>
+      <h3>Types</h3>
+
+      <table class="standard-table">
+         <thead>
+         <tr>
+            <th scope="col">Type</th>
+            <th scope="col">Résultat</th>
+         </tr>
+         </thead>
+         <tbody>
+         <tr>
+            <td>null</td>
+            <td style="width: 400px"><pre><code class="js">var myVar1 = null;</code></pre></td>
+         </tr>
+         <tr>
+            <td>undefined</td>
+            <td style="width: 400px"><pre><code class="js">var myVar2;</code></pre></td>
+         </tr>
+         <tr>
+            <td>boolean</td>
+            <td style="width: 400px"><pre><code class="js">var isJSNice = true;</code></pre></td>
+         </tr>
+         <tr>
+            <td>number</td>
+            <td style="width: 400px"><pre><code class="js">var myNumber = 9000;</code></pre></td>
+         </tr>
+         <tr>
+            <td>string</td>
+            <td style="width: 400px"><pre><code class="js">var myString = 'kikoo';</code></pre></td>
+         </tr>
+         <tr>
+            <td>object</td>
+            <td style="width: 400px"><pre><code class="js">var thing = {yep: 'yep!'};</code></pre></td>
+         </tr>
+         </tbody>
+      </table>
+
+      <aside class="notes">
+         <ul>
+            <li></li>
+         </ul>
+      </aside>
+   </section>
+   <section>
       <h3>Typeof</h3>
 
       <pre style="text-align: center"><code class="js" data-trim>
@@ -40,45 +84,46 @@
       </aside>
    </section>
    <section>
-      <h3>Typeof</h3>
+      <h3>Types et typeof</h3>
 
       <table class="standard-table">
          <thead>
          <tr>
             <th scope="col">Type</th>
             <th scope="col">Résultat</th>
+            <th scope="col">typeof</th>
          </tr>
          </thead>
          <tbody>
          <tr>
-            <td>indéfini</td>
-            <td style="width: 400px">
-               <pre><code class="js">typeof Indefini; //'undefined'</code></pre></td>
+            <td>null</td>
+            <td style="width: 400px"><pre><code class="js">var myVar1 = null;</code></pre></td>
+            <td style="width: 400px"><pre><code class="js">'object'</code></pre></td>
          </tr>
          <tr>
-            <td>booléen</td>
-            <td style="width: 400px">
-               <pre><code class="js">typeof Booleen; //'boolean'</code></pre></td>
+            <td>undefined</td>
+            <td style="width: 400px"><pre><code class="js">var myVar2;</code></pre></td>
+            <td style="width: 400px"><pre><code class="js">'undefined'</code></pre></td>
          </tr>
          <tr>
-            <td>nombre</td>
-            <td style="width: 400px">
-               <pre><code class="js">typeof Nombre; //'number'</code></pre></td>
+            <td>boolean</td>
+            <td style="width: 400px"><pre><code class="js">var isJSNice = true;</code></pre></td>
+            <td style="width: 400px"><pre><code class="js">'boolean'</code></pre></td>
          </tr>
          <tr>
-            <td>chaîne de caractère</td>
-            <td style="width: 400px">
-               <pre><code class="js">typeof String; //'string'</code></pre></td>
+            <td>number</td>
+            <td style="width: 400px"><pre><code class="js">var myNumber = 9000;</code></pre></td>
+            <td style="width: 400px"><pre><code class="js">'number'</code></pre></td>
          </tr>
          <tr>
-            <td>Objet Function</td>
-            <td style="width: 400px">
-               <pre><code class="js">typeof Function; //'function'</code></pre></td>
+            <td>string</td>
+            <td style="width: 400px"><pre><code class="js">var myString = 'kikoo';</code></pre></td>
+            <td style="width: 400px"><pre><code class="js">'string'</code></pre></td>
          </tr>
          <tr>
-            <td>Tout autre objet</td>
-            <td style="width: 400px">
-               <pre><code class="js">typeof Autre; //'object'</code></pre></td>
+            <td>object</td>
+            <td style="width: 400px"><pre><code class="js">var thing = {yep: 'yep!'};</code></pre></td>
+            <td style="width: 400px"><pre><code class="js">'object'</code></pre></td>
          </tr>
          </tbody>
       </table>
@@ -90,72 +135,29 @@
       </aside>
    </section>
    <section>
-      <h3>Typeof</h3>
-      <div class="starburst es6-starburst"><span>ES6</span></div>
+     <h3>Types et typeof</h3>
 
-      <table class="standard-table">
-         <thead>
-         <tr>
-            <th scope="col">Type</th>
-            <th scope="col">Résultat</th>
-         </tr>
-         </thead>
-         <tbody>
-         <tbody>
-         <tr>
-            <td>Symbol</td>
-            <td style="width: 400px">
-               <pre><code class="js">typeof Symbol; //'symbol'</code></pre></td>
-         </tr>
-         </tbody>
-      </table>
-
-      <aside class="notes">
-         <ul>
-            <li></li>
-         </ul>
-      </aside>
-   </section>
-   <section>
-      <h3>Typeof (Examples)</h3>
-
-      <table class="standard-table">
-         <thead>
-         <tr>
-            <th scope="col">Commande</th>
-            <th scope="col">Résultat</th>
-         </tr>
-         </thead>
-         <tbody>
-         <tbody>
-         <tr>
-            <td style="width: 300px"><pre><code class="js">typeof 123;</code></pre></td>
-            <td><pre><code class="js">'number'</code></pre></td>
-         </tr>
-         <tr>
-            <td style="width: 300px"><pre><code class="js">typeof 'Hello World!';</code></pre></td>
-            <td><pre><code class="js">'string'</code></pre></td>
-         </tr>
-         <tr>
-            <td style="width: 300px"><pre><code class="js">typeof true;</code></pre></td>
-            <td><pre><code class="js">'boolean'</code></pre></td>
-         </tr>
-         <tr>
-            <td style="width: 300px"><pre><code class="js">typeof {};</code></pre></td>
-            <td><pre><code class="js">'object'</code></pre></td>
-         </tr>
-         <tr>
-            <td style="width: 300px"><pre><code class="js">typeof function () {};</code></pre></td>
-            <td><pre><code class="js">'function'</code></pre></td>
-         </tr>
-         </tbody>
-      </table>
-
-      <aside class="notes">
-         <ul>
-            <li></li>
-         </ul>
-      </aside>
+    <table class="standard-table">
+      <thead>
+      <tr>
+        <th scope="col">Type</th>
+        <th scope="col">Résultat</th>
+        <th scope="col">typeof</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>array</td>
+          <td style="width: 400px"><pre><code class="js">var arr = [1, 'a', true];</code></pre></td>
+          <td style="width: 400px"><pre><code class="js">'object'</code></pre></td>
+        </tr>
+        <tr>
+          <td>function</td>
+          <td style="width: 400px"><pre><code class="js">function toto() {}</code></pre></td>
+          <td style="width: 400px"><pre><code class="js">'function'</code></pre></td>
+        </tr>
+      </tbody>
+    </table>
    </section>
    <section>
       <h3>Typeof vs Primitif</h3>
@@ -191,6 +193,34 @@
          <tr>
             <td>Object</td>
             <td>Collections de propriétés</td>
+         </tr>
+         </tbody>
+      </table>
+
+      <aside class="notes">
+         <ul>
+            <li></li>
+         </ul>
+      </aside>
+   </section>
+   <section>
+      <h3>Typeof</h3>
+      <div class="starburst es6-starburst"><span>ES6</span></div>
+
+      <table class="standard-table">
+         <thead>
+         <tr>
+           <th scope="col">Type</th>
+           <th scope="col">Résultat</th>
+           <th scope="col">typeof</th>
+         </tr>
+         </thead>
+         <tbody>
+         <tbody>
+         <tr>
+           <td>Symbol</td>
+           <td style="width: 400px"><pre><code class="js">var key = Symbol("key")</code></pre></td>
+           <td style="width: 400px"><pre><code class="js">'symbol'</code></pre></td>
          </tr>
          </tbody>
       </table>
